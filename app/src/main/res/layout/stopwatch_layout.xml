@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_stopwatch_circle"
+        android:padding="60dp">
+
+        <TextView
+            android:id="@+id/stopwatch_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/initial_stopwatch"
+            android:theme="@style/AlarmesAndroidNextGeneration.Timer" />
+
+        <TextView
+            android:id="@+id/stopwatch_msec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:paddingTop="15dp"
+            android:text="@string/initial_timer"
+            android:theme="@style/AlarmesAndroidNextGeneration.Timer_keyboard" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stopwatch_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toStartOf="@id/stopwatch_start"
+        android:background="@android:color/transparent"
+        android:text="@string/stop_watchreset" />
+
+    <ImageButton
+        android:id="@+id/stopwatch_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_play_circle"
+        android:contentDescription="@string/stopwatch_play_desc"
+        android:src="@drawable/ic_play_arrow" />
+
+</RelativeLayout>

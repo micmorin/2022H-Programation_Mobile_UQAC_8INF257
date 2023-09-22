@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextClock
+        android:id="@+id/hourClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/clockCenter"
+        android:layout_centerHorizontal="true"
+        android:format12Hour="hh:mm:ss aa"
+        android:format24Hour="HH:mm:ss"
+        android:textColor="@color/AAND_Beige"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/clockCenter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/clockCenter"
+        android:layout_centerHorizontal="true"
+        android:format12Hour="EEE dd MMM"
+        android:format24Hour="EEE dd MMM"
+        android:textColor="@color/AAND_Green"
+        android:textSize="40sp" />
+</RelativeLayout>

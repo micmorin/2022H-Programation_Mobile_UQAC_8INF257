@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/digit_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/initial_stopwatch"
+        android:theme="@style/AlarmesAndroidNextGeneration.Alarm_Time" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="end|center" />
+
+    <CheckBox
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/digit_clock"
+        android:text="@string/repeat"
+
+        android:textColor="@color/AAND_Green"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/ring_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeat"
+        android:background="@drawable/ic_ringtone" />
+
+    <CheckBox
+        android:id="@+id/vibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repeat"
+        android:layout_alignParentEnd="true"
+        android:text="@string/vibrate"
+        android:textColor="@color/AAND_Green" />
+
+    <EditText
+        android:id="@+id/lablel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vibrate"
+        android:background="@drawable/ic_label"
+        android:hint="@string/label"
+        android:paddingStart="40dp"
+        android:textColor="@color/AAND_Green" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lablel"
+        android:background="@android:color/transparent"
+        android:paddingVertical="5dp"
+        android:src="@drawable/ic_delete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lablel"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/delete"
+        android:paddingVertical="6dp"
+        android:text="@string/timer_delete"
+        android:textColor="@color/AAND_Green"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/up_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lablel"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_up_arrow" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/up_arrow"
+        android:layout_marginTop="10dp"
+        android:background="@color/AAND_Green"
+        android:visibility="visible" />
+
+</RelativeLayout>

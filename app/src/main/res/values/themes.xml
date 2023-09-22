@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AlarmesAndroidNextGeneration" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/AAND_Green</item>
+        <item name="colorPrimaryVariant">@color/AAND_Green</item>
+        <item name="colorOnPrimary">@color/AAND_Blue</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/AAND_Green</item>
+        <item name="colorSecondaryVariant">@color/AAND_Green</item>
+        <item name="colorOnSecondary">@color/AAND_Blue</item>
+
+    </style>
+</resources>

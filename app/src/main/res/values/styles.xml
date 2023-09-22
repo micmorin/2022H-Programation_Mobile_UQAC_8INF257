@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlarmesAndroidNextGeneration" parent="Theme.MaterialComponents.DayNight">
+    </style>
+
+    <style name="AlarmesAndroidNextGeneration.Menu">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="AlarmesAndroidNextGeneration.Timer">
+        <item name="android:textSize">60dp</item>
+    </style>
+
+    <style name="AlarmesAndroidNextGeneration.Timer_label">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="AlarmesAndroidNextGeneration.Timer_keyboard">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="AlarmesAndroidNextGeneration.Header_textView">
+        <item name="android:padding">0sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AlarmesAndroidNextGeneration.Alarm_Time">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+</resources>

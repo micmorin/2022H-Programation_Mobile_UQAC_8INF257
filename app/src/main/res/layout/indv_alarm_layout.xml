@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/initial_stopwatch"
+            android:theme="@style/AlarmesAndroidNextGeneration.Alarm_Time" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/toggle_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="end|center" />
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:text="@string/default_tmrw"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/down_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:background="@android:color/transparent"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_down_arrow" />
+
+        <View
+            android:id="@+id/alarm_separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/day"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/digit_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/initial_stopwatch"
+            android:theme="@style/AlarmesAndroidNextGeneration.Alarm_Time" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/toggle_adv"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="end|center" />
+
+        <CheckBox
+            android:id="@+id/repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/digit_clock"
+            android:text="@string/repeat"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/nbr_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repeat"
+            android:inputType="number"
+            android:paddingVertical="10dp"
+            android:visibility="gone"
+            android:text="@string/timer_0"/>
+
+        <Spinner
+            android:id="@+id/timeFrame_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repeat"
+            android:layout_alignBottom="@id/nbr_repeat"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/nbr_repeat"
+            android:paddingVertical="20dp" />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_below="@id/repeat"
+            android:layout_toEndOf="@id/timeFrame_spinner"
+            android:layout_alignBottom="@id/nbr_repeat"
+            android:textSize="15sp"
+            android:layout_marginStart="10sp"
+            android:paddingVertical="10dp"
+            android:visibility="gone"
+            android:text="@string/initial_stopwatch"/>
+
+
+        <ImageView
+            android:id="@+id/ring_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nbr_repeat"
+            android:background="@android:color/transparent"
+            android:paddingVertical="15dp"
+            app:srcCompat="@drawable/ic_ringtone" />
+
+        <Spinner
+            android:id="@+id/ring_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nbr_repeat"
+            android:layout_toEndOf="@id/ring_icon"
+            android:layout_marginStart="10dp"
+            android:paddingVertical="15dp" />
+
+        <CheckBox
+            android:id="@+id/vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/nbr_repeat"
+            android:layout_alignParentEnd="true"
+            android:text="@string/vibrate" />
+
+        <ImageView
+            android:id="@+id/label_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ring_spinner"
+            android:background="@android:color/transparent"
+            android:paddingVertical="12dp"
+            app:srcCompat="@drawable/ic_label" />
+
+        <EditText
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ring_spinner"
+            android:hint="@string/label"
+            android:paddingVertical="15dp"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingVertical="5dp"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/delete_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/delete"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingVertical="5dp"
+            android:text="@string/timer_delete"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/up_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_up_arrow" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/up_arrow"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

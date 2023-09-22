@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="#D8D8D8"
+    android:padding="15dp">
+
+    <ImageButton
+        android:id="@+id/menu_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_menu"
+        android:theme="@style/AlarmesAndroidNextGeneration.Menu"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/title_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/sync_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_sync"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="10dp"
+        android:text="@string/username"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_sync"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/username"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="10dp"
+        android:text="@string/password"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_alignStart="@id/edit_username"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/password"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/connect" />
+
+    <View
+        android:id="@+id/separator_drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@color/AAND_Green"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/title_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator_drawer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/theme_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/primary_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_theme"
+        android:layout_marginTop="30dp"
+        android:text="@string/primary_color"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/primary_color_button"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/title_theme"
+        android:layout_alignStart="@id/back_color_button"
+        android:layout_alignEnd="@id/back_color_button"
+        android:layout_marginTop="30dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/secondary_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/primary_color"
+        android:layout_marginTop="30dp"
+        android:text="@string/secondary_color"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/secondary_color_button"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/primary_color"
+        android:layout_alignStart="@id/back_color_button"
+        android:layout_alignEnd="@id/back_color_button"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/secondary_color"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/back_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondary_color"
+        android:layout_marginTop="30dp"
+        android:text="@string/back_color"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/back_color_button"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/secondary_color"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/back_color"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/secondary_Back_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_color"
+        android:layout_marginTop="30dp"
+        android:text="@string/secondary_Back_color"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/secondary_Back_color_button"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/back_color"
+        android:layout_alignStart="@id/back_color_button"
+        android:layout_alignEnd="@id/back_color_button"
+        android:layout_marginTop="30dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondary_Back_color_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/save" />
+
+</RelativeLayout>
